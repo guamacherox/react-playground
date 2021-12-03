@@ -18,5 +18,6 @@ Serve your application running the command
 
 ### Tools Used
 
+- [Vite](https://vitejs.dev/)
 - [Chakra UI](https://chakra-ui.com/)
 - [React Query](https://react-query.tanstack.com/)
