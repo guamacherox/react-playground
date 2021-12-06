@@ -6,7 +6,10 @@ interface Props {
   isLoading?: any
 }
 
-const CharacterSelect: React.FC<Props> = ({ isLoading = false, ...props }) => {
+const ComposableCharacterSelect: React.FC<Props> = ({
+  isLoading = false,
+  ...props
+}) => {
   return (
     <Skeleton isLoaded={!isLoading}>
       <Select placeholder="Select character">{props.children}</Select>
@@ -14,4 +17,4 @@ const CharacterSelect: React.FC<Props> = ({ isLoading = false, ...props }) => {
   )
 }
 
-export default CharacterSelect
+export default ComposableCharacterSelect

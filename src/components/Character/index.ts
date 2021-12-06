@@ -1,4 +1,11 @@
-import CharacterOption from './CharacterOption'
-import CharacterSelect from './CharacterSelect'
+import ComposableCharacterOption from './ComposableCharacterOption'
+import ComposableCharacterSelect from './ComposableCharacterSelect'
+import ConfigurableCharacterSelect from './ConfigurableCharacterSelect'
+import ConfigurableCharacterOption from './ConfigurableCharacterOption'
 
-export { CharacterSelect, CharacterOption }
+export {
+  ComposableCharacterSelect,
+  ComposableCharacterOption,
+  ConfigurableCharacterSelect,
+  ConfigurableCharacterOption,
+}

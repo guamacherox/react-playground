@@ -1,13 +1,16 @@
 import React from 'react'
 import { Select, Skeleton } from '@chakra-ui/react'
-import CharacterOptionForConfigurable from './CharacterOptionForConfigurable'
+import CharacterOptionForConfigurable from './ConfigurableCharacterOption'
 
 interface Props {
   dataForCharacters: any
   isLoading: boolean
 }
 
-const ConfigurableSelect = ({ dataForCharacters = [], isLoading }: Props) => {
+const ConfigurableCharacterSelect = ({
+  dataForCharacters = [],
+  isLoading,
+}: Props) => {
   return (
     <>
       {
@@ -26,4 +29,4 @@ const ConfigurableSelect = ({ dataForCharacters = [], isLoading }: Props) => {
   )
 }
 
-export default ConfigurableSelect
+export default ConfigurableCharacterSelect

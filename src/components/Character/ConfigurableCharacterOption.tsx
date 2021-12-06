@@ -4,10 +4,10 @@ interface Props {
   dataForOption: any
 }
 
-const CharacterOptionForConfigurable: React.FC<Props> = ({
+const ConfigurableCharacterOption: React.FC<Props> = ({
   dataForOption,
 }: Props) => {
   return <option value="option1">{dataForOption.name}</option>
 }
 
-export default CharacterOptionForConfigurable
+export default ConfigurableCharacterOption

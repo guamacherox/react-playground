@@ -1,7 +1,10 @@
 import { Box, Stack, Heading, Divider } from '@chakra-ui/react'
 import React from 'react'
-import { CharacterOption, CharacterSelect } from '../components/Character'
-import ConfigurableSelect from '../components/Character/ConfigurableSelect'
+import {
+  ComposableCharacterOption,
+  ComposableCharacterSelect,
+} from '../components/Character'
+import ConfigurableSelect from '../components/Character/ConfigurableCharacterSelect'
 import useCharacterList from '../hooks/useCharacterList'
 
 interface Props {}
@@ -44,23 +47,23 @@ const CharacterComponentsPage: React.FC<Props> = (props) => {
           </Heading>
           <Divider />
           {/* Depends of async data fetching */}
-          <CharacterSelect isLoading={isLoading}>
+          <ComposableCharacterSelect isLoading={isLoading}>
             {data &&
               data.map((character: any, index: number) => {
                 return (
-                  <CharacterOption key={index}>
+                  <ComposableCharacterOption key={index}>
                     {`${character.name}`}
-                  </CharacterOption>
+                  </ComposableCharacterOption>
                 )
               })}
-          </CharacterSelect>
+          </ComposableCharacterSelect>
 
           {/* Explicit Mocking */}
-          <CharacterSelect>
-            <CharacterOption>Juan Luis</CharacterOption>
-            <CharacterOption>Juan Bautista</CharacterOption>
-            <CharacterOption>Braulio</CharacterOption>
-          </CharacterSelect>
+          <ComposableCharacterSelect>
+            <ComposableCharacterOption>Juan Luis</ComposableCharacterOption>
+            <ComposableCharacterOption>Juan Bautista</ComposableCharacterOption>
+            <ComposableCharacterOption>Braulio</ComposableCharacterOption>
+          </ComposableCharacterSelect>
         </Stack>
       </Box>
       {/* END COMPOSABLE SELECTS */}

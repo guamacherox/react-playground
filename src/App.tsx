@@ -9,8 +9,8 @@ import {
 import { ChakraProvider, Stack } from '@chakra-ui/react'
 
 import { Box, Select } from '@chakra-ui/react'
-import ComposableSelect from './components/Character/CharacterSelect'
-import CharacterSelect from './components/Character/CharacterSelect'
+import ComposableSelect from './components/Character/ComposableCharacterSelect'
+import CharacterSelect from './components/Character/ComposableCharacterSelect'
 import { CharacterOption } from './components/Character'
 import useCharacterList from './hooks/useCharacterList'
 import CharacterComponentsPage from './pages/CharacterComponentsPage'
